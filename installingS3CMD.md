@@ -1,10 +1,9 @@
-```
 S3cmd on SUSE Linux Setup Guide
 			
 Install
-•	Boot up Virtual Machine
-o	If Azure VM, go to Azure portal and find the SUSE VM and “Start” it
-•	SSH (log into) into SUSE VM
+Boot up Virtual Machine
+If Azure VM, go to Azure portal and find the SUSE VM and “Start” it
+SSH (log into) into SUSE VM
 o	Need IP and Username and Password (can be found and reset in Azure Portal page for respective VM)
 	Username and Password are case sensitive
 o	Use Putty SSH tool for Windows, Terminal tool for Linux or OSX
