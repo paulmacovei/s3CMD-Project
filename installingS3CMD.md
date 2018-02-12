@@ -1,3 +1,4 @@
+```
 S3cmd on SUSE Linux Setup Guide
 			
 Install
@@ -70,3 +71,4 @@ s3cmd ls
 s3cmd la
 s3cmd get s3://bucket_name//object_name
 s3cmd get s3://bucket_name/
+```
