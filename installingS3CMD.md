@@ -1,32 +1,31 @@
-S3cmd on SUSE Linux Setup Guide
+# S3cmd on SUSE Linux Setup Guide
 			
+## Install
+- Boot up Virtual Machine
+- If Azure VM, go to Azure portal and find the SUSE VM and “Start” it
+- SSH (log into) into SUSE VM
+  - Need IP and Username and Password (can be found and reset in Azure Portal page for respective VM)
+  - Username and Password are case sensitive
+  - Use Putty SSH tool for Windows, Terminal tool for Linux or OSX
+  - Verify logged in correctly when you see the command prompt
+Create and navigate to temporary install directory
+- mkdir /var/tmp/s3
+- cd /var/tmp/s3
 Install
-Boot up Virtual Machine
-If Azure VM, go to Azure portal and find the SUSE VM and “Start” it
-SSH (log into) into SUSE VM
-o	Need IP and Username and Password (can be found and reset in Azure Portal page for respective VM)
-	Username and Password are case sensitive
-o	Use Putty SSH tool for Windows, Terminal tool for Linux or OSX
-o	Verify logged in correctly when you see the command prompt
-	 
-•	Create and navigate to temporary install directory
-o	mkdir /var/tmp/s3
-o	cd /var/tmp/s3
-•	Install
-o	Download S3cmd compressed file to /var/tmp folder
-	wget http://ufpr.dl.sourceforge.net/project/s3tools/s3cmd/1.6.1/s3cmd-1.6.1.tar.gz
-o	Extract S3cmd compressed file
-	tar -xf s3cmd-1.6.1.tar.gz
-o	Navigate to S3cmd Install folder
-	cd s3cmd-1.6.1
-o	Run installation file
-	sudo python setup.py install
-	Enter root (sudo) password when prompted 
-o	After install is finished, remove installation files
+- Download S3cmd compressed file to /var/tmp folder
+  - wget http://ufpr.dl.sourceforge.net/project/s3tools/s3cmd/1.6.1/s3cmd-1.6.1.tar.gz
+- xtract S3cmd compressed file
+  - tar -xf s3cmd-1.6.1.tar.gz
+- Navigate to S3cmd Install folder
+  -cd s3cmd-1.6.1
+- Run installation file
+  - sudo python setup.py install
+  - Enter root (sudo) password when prompted 
+- After install is finished, remove installation files
 	cd /var/tmp
 	sudo rm s3 -rf
  
-Configure
+## Configure
 •	s3cmd - -configure
 •	Type in Access Key of AWS account when prompted
 o	Created when setting up AWS account, need admin to provide
@@ -53,10 +52,10 @@ o	Navigate over to directory you want to save file (through cd)
 o	s3cmd get s3://bucket_name//object_name
 	Or just s3cmd get s3://bucket_name/ for whole bucket
 
-Command List for S3cmd
+## Command List for S3cmd
 •	https://linux.die.net/man/1/s3cmd
 
-Easy copy and paste notation of above commands (copy here and just right click into Putty / Terminal to paste)
+## Easy copy and paste notation of above commands (copy here and just right click into Putty / Terminal to paste)
 mkdir /var/tmp/s3
 cd /var/tmp/s3
 wget http://ufpr.dl.sourceforge.net/project/s3tools/s3cmd/1.6.1/s3cmd-1.6.1.tar.gz
@@ -70,4 +69,3 @@ s3cmd ls
 s3cmd la
 s3cmd get s3://bucket_name//object_name
 s3cmd get s3://bucket_name/
-```
