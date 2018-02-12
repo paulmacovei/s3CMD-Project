@@ -37,14 +37,14 @@ regularly to copy files
 password=StorageAccountKeyEndingIn==,dir_mode=0777,file_mode=0777
   - Mode=0777 provides access to all users on that VM, feel free to switch to other code that restricts access if needed
   - Yellow highlights must be changed to respective values 
-- Azure Account
-- File Share name you created
-- Mount point you designated
-- Storage Account name
-- Storage account key
-  - Storage Account Key can be found in Storage Account > Access Keys in Azure Console
-  - Keep file share mounted after reboot – must add setting to /etc/fstab (edit file)
-  - //myaccountname.file.core.windows.net/mysharename /mymountpoint cifs vers=3.0,username=myaccountname,
+    - Azure Account
+    - File Share name you created
+    - Mount point you designated
+    - Storage Account name
+    - Storage account key
+      - Storage Account Key can be found in Storage Account > Access Keys in Azure Console
+      - Keep file share mounted after reboot – must add setting to /etc/fstab (edit file)
+      - //myaccountname.file.core.windows.net/mysharename /mymountpoint cifs vers=3.0,username=myaccountname,
 password=StorageAccountKeyEndingIn==,dir_mode=0777,file_mode=0777
 - Once all the above is complete your VM will have a direct connection to a Storage File Share (mounted like another HD)
 wherein you can place your SAP Dump file from blob and it will be accessible on the VM through the 
