@@ -22,35 +22,36 @@ Install
   - sudo python setup.py install
   - Enter root (sudo) password when prompted 
 - After install is finished, remove installation files
-	cd /var/tmp
-	sudo rm s3 -rf
+  - cd /var/tmp
+  - sudo rm s3 -rf
  
 ## Configure
-•	s3cmd - -configure
-•	Type in Access Key of AWS account when prompted
-o	Created when setting up AWS account, need admin to provide
-•	Type in Secret Access Key of AWS account when prompted
-o	Created when setting up AWS account, need admin to provide
-•	Press [Enter] key when prompted for default region
-•	Create encryption password
-o	*Text not hidden*
-•	Press [Enter] key when prompted for path to GPG program 
-•	Press [Enter] key when prompted to use HTTPS protocol
-•	Press [Enter] key when prompted for HTTP proxy path
-•	Type in “Y” when prompted to test setup
-•	Confirm that test worked
-o	If not, troubleshoot by making sure AWS account access set up properly and the Access keys are correct and type in “N” and then type in “n”
-o	If yes, type in “y” to finish configuration
-Use
-•	To list all objects or buckets
-o	s3cmd ls
-•	To list all objects inside of buckets
-o	s3cmd la
-•	To download an object from bucket to local VM Hard Drive
-o	Navigate over to directory you want to save file (through cd)
-	i.e cd /home
-o	s3cmd get s3://bucket_name//object_name
-	Or just s3cmd get s3://bucket_name/ for whole bucket
+s3cmd --configure
+Type in Access Key of AWS account when prompted
+- Created when setting up AWS account, need admin to provide
+Type in Secret Access Key of AWS account when prompted
+- Created when setting up AWS account, need admin to provide
+Press [Enter] key when prompted for default region
+Create encryption password
+- *Text not hidden*
+Press [Enter] key when prompted for path to GPG program 
+Press [Enter] key when prompted to use HTTPS protocol
+Press [Enter] key when prompted for HTTP proxy path
+Type in “Y” when prompted to test setup
+Confirm that test worked
+- If not, troubleshoot by making sure AWS account access set up properly and the Access keys are correct and type in “N” and then type in “n”
+- If yes, type in “y” to finish configuration
+
+## Usage
+To list all objects or buckets
+- s3cmd ls
+To list all objects inside of buckets
+- s3cmd la
+To download an object from bucket to local VM Hard Drive
+- Navigate over to directory you want to save file (through cd)
+- i.e cd /home
+- s3cmd get s3://bucket_name//object_name
+- Or just s3cmd get s3://bucket_name/ for whole bucket
 
 ## Command List for S3cmd
 •	https://linux.die.net/man/1/s3cmd
