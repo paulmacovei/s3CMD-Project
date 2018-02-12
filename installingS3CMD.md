@@ -26,21 +26,21 @@ Install
   - sudo rm s3 -rf
  
 ## Configure
-s3cmd --configure
-Type in Access Key of AWS account when prompted
-- Created when setting up AWS account, need admin to provide
-Type in Secret Access Key of AWS account when prompted
-- Created when setting up AWS account, need admin to provide
-Press [Enter] key when prompted for default region
-Create encryption password
-- *Text not hidden*
-Press [Enter] key when prompted for path to GPG program 
-Press [Enter] key when prompted to use HTTPS protocol
-Press [Enter] key when prompted for HTTP proxy path
-Type in “Y” when prompted to test setup
-Confirm that test worked
-- If not, troubleshoot by making sure AWS account access set up properly and the Access keys are correct and type in “N” and then type in “n”
-- If yes, type in “y” to finish configuration
+- s3cmd --configure
+- Type in Access Key of AWS account when prompted
+  - Created when setting up AWS account, need admin to provide
+- Type in Secret Access Key of AWS account when prompted
+  - Created when setting up AWS account, need admin to provide
+- Press [Enter] key when prompted for default region
+- Create encryption password
+  - *Text not hidden*
+- Press [Enter] key when prompted for path to GPG program 
+- Press [Enter] key when prompted to use HTTPS protocol
+- Press [Enter] key when prompted for HTTP proxy path
+- Type in “Y” when prompted to test setup
+- Confirm that test worked
+  - If not, troubleshoot by making sure AWS account access set up properly and the Access keys are correct and type in “N” and then type in “n”
+  - If yes, type in “y” to finish configuration
 
 ## Usage
 - To list all objects or buckets
