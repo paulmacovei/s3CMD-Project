@@ -43,30 +43,30 @@ Confirm that test worked
 - If yes, type in “y” to finish configuration
 
 ## Usage
-To list all objects or buckets
-- s3cmd ls
-To list all objects inside of buckets
-- s3cmd la
-To download an object from bucket to local VM Hard Drive
-- Navigate over to directory you want to save file (through cd)
-- i.e cd /home
-- s3cmd get s3://bucket_name//object_name
-- Or just s3cmd get s3://bucket_name/ for whole bucket
+- To list all objects or buckets
+  - s3cmd ls
+- To list all objects inside of buckets
+  - s3cmd la
+- To download an object from bucket to local VM Hard Drive
+  - Navigate over to directory you want to save file (through cd)
+  - i.e cd /home
+  - s3cmd get s3://bucket_name//object_name
+  - Or just s3cmd get s3://bucket_name/ for whole bucket
 
 ## Command List for S3cmd
 •	https://linux.die.net/man/1/s3cmd
 
 ## Easy copy and paste notation of above commands (copy here and just right click into Putty / Terminal to paste)
-mkdir /var/tmp/s3
-cd /var/tmp/s3
-wget http://ufpr.dl.sourceforge.net/project/s3tools/s3cmd/1.6.1/s3cmd-1.6.1.tar.gz
-tar -xf s3cmd-1.6.1.tar.gz
-cd s3cmd-1.6.1
-sudo python setup.py install
-cd /var/tmp
-sudo rm s3 -rf
-s3cmd --configure
-s3cmd ls
-s3cmd la
-s3cmd get s3://bucket_name//object_name
-s3cmd get s3://bucket_name/
+- mkdir /var/tmp/s3
+- cd /var/tmp/s3
+- wget http://ufpr.dl.sourceforge.net/project/s3tools/s3cmd/1.6.1/s3cmd-1.6.1.tar.gz
+- tar -xf s3cmd-1.6.1.tar.gz
+- cd s3cmd-1.6.1
+- sudo python setup.py install
+- cd /var/tmp
+- sudo rm s3 -rf
+- s3cmd --configure
+- s3cmd ls
+- s3cmd la
+- s3cmd get s3://bucket_name//object_name
+- s3cmd get s3://bucket_name/
