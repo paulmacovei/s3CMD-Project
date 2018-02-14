@@ -1,6 +1,6 @@
 # S3cmd on SUSE Linux Shell Script	
 
-The following script below will install and configure S3cmd for usage on a SUSE system, just modify the below yellow items to the AWS account access and secret keys and the encryption key is any kind you may choose to use.
+The following script below will install and configure S3cmd for usage on a SUSE system, just modify the below personal values (i.e. keys) to the AWS account access and secret keys and the encryption key is any kind you may choose to use.
 
 ```
 #!/bin/bash
