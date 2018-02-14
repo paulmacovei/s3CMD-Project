@@ -24,7 +24,7 @@ directly on the VM through the mountpoint
   - If you wanted to regularly copy over from mountpoint to the local VM HD, you’ll need to do create a cron job to run a script
 regularly to copy files
     - crontab –e
-    - * * * * * cp /mnt/mountpoint/SAPFile /directory_you_want_to_copy_to
+    - cp /mnt/mountpoint/SAPFile /directory_you_want_to_copy_to
  
 ## Set up Azure VM to have “File Share” mounted as an accessible disk
 - Install Samba to allow for mounting of “File Share” (if not installed already)
